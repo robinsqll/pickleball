@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {year} Pickleball France. Tous droits réservés.
+            &copy; {year} Pickleball. Tous droits réservés.
           </p>
         </div>
       </div>

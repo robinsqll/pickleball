@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="relative z-10 container mx-auto px-4 py-24 sm:py-32 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
-            Bienvenue sur <span className="text-primary-foreground">Pickleball France</span>
+            Bienvenue sur <span className="text-primary-foreground">Pickleball FFT</span>
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mb-8">
             La référence pour le développement du pickleball en France. Découvrez ce sport passionnant, trouvez des clubs et participez à des tournois.
