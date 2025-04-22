@@ -1,10 +1,5 @@
 import * as React from 'react';
 import * as RechartsPrimitive from 'recharts';
-import {
-  NameType,
-  Payload,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
 
 import { cn } from '@/lib/utils';
 
@@ -72,7 +67,7 @@ ChartContainer.displayName = 'Chart';
 
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
-    ([_, config]) => config.theme || config.color
+    ([, item]) => item.theme || item.color
   );
 
   if (!colorConfig.length) {
@@ -104,6 +99,8 @@ ${colorConfig
 };
 
 const ChartTooltip = RechartsPrimitive.Tooltip;
+
+/* ---------- Tooltip ---------- */
 
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
@@ -259,6 +256,8 @@ const ChartTooltipContent = React.forwardRef<
 );
 ChartTooltipContent.displayName = 'ChartTooltip';
 
+/* ---------- Legend ---------- */
+
 const ChartLegend = RechartsPrimitive.Legend;
 
 const ChartLegendContent = React.forwardRef<
@@ -319,7 +318,8 @@ const ChartLegendContent = React.forwardRef<
 );
 ChartLegendContent.displayName = 'ChartLegend';
 
-// Helper to extract item config from a payload.
+/* ---------- Helpers ---------- */
+
 function getPayloadConfigFromPayload(
   config: ChartConfig,
   payload: unknown,

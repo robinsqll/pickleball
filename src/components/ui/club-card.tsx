@@ -10,10 +10,14 @@ export interface ClubCardProps {
     city: string;
     region: string;
   };
-  level: 'Débutant' | 'Intermédiaire' | 'Avancé' | 'Tous niveaux';
-  memberCount: number;
+  /** Niveau moyen – facultatif si inconnu */
+  level?: 'Débutant' | 'Intermédiaire' | 'Avancé' | 'Tous niveaux';
+  /** Nombre de membres – facultatif */
+  memberCount?: number;
+  /** URL du site – facultatif */
   website?: string;
-  contactEmail: string;
+  /** Adresse mail de contact – facultatif */
+  contactEmail?: string;
 }
 
 export function ClubCard({
@@ -28,30 +32,44 @@ export function ClubCard({
     <Card>
       <CardContent className="p-6">
         <div className="space-y-4">
+          {/* Titre + localisation */}
           <div className="space-y-2">
             <h3 className="text-xl font-semibold">{name}</h3>
             <div className="flex items-center text-muted-foreground">
               <MapPin className="h-4 w-4 mr-1" />
-              <span className="text-sm">{location.city}, {location.region}</span>
+              <span className="text-sm">
+                {location.city}, {location.region}
+              </span>
             </div>
           </div>
 
+          {/* Niveau + nombre de membres (si disponibles) */}
           <div className="flex items-center space-x-2">
-            <Badge variant="secondary">{level}</Badge>
-            <div className="flex items-center text-sm text-muted-foreground">
-              <Users className="h-4 w-4 mr-1" />
-              <span>{memberCount} membres</span>
-            </div>
+            {level && <Badge variant="secondary">{level}</Badge>}
+            {memberCount !== undefined && (
+              <div className="flex items-center text-sm text-muted-foreground">
+                <Users className="h-4 w-4 mr-1" />
+                <span>
+                  {memberCount.toLocaleString()}&nbsp;membre
+                  {memberCount > 1 ? 's' : ''}
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </CardContent>
+
+      {/* Boutons de pied de carte */}
       <CardFooter className="p-6 pt-0 flex flex-col space-y-2">
-        <Button className="w-full" variant="outline" asChild>
-          <a href={`mailto:${contactEmail}`}>
-            <Mail className="h-4 w-4 mr-2" />
-            Contacter
-          </a>
-        </Button>
+        {contactEmail && (
+          <Button className="w-full" variant="outline" asChild>
+            <a href={`mailto:${contactEmail}`}>
+              <Mail className="h-4 w-4 mr-2" />
+              Contacter
+            </a>
+          </Button>
+        )}
+
         {website && (
           <Button className="w-full" variant="secondary" asChild>
             <a href={website} target="_blank" rel="noopener noreferrer">
