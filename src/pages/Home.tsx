@@ -8,7 +8,9 @@ import { Shield, Award, Users, TrendingUp } from "lucide-react";
 
 export default function Home() {
   // Get the featured tournament or the first available one
-  const featuredTournament = tournaments.find(t => t.featured) || tournaments[0];
+    const featuredTournaments = tournaments
+      .filter((t) => t.featured)
+      .slice(0, 3);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -26,7 +28,7 @@ export default function Home() {
 
         <div className="relative z-10 container mx-auto px-4 py-24 sm:py-32 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
-            Bienvenue sur <span className="text-primary-foreground">Pickleball FFT</span>
+          Bienvenue au <span className="text-primary-foreground">TSATGD PICKLEBALL</span>
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mb-8">
             La référence pour le développement du pickleball en France. Découvrez ce sport passionnant, trouvez des clubs et participez à des tournois.
@@ -142,17 +144,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Tournament */}
+      {/* Featured Tournaments */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
-            title="Prochain tournoi à la une"
+            title="Tournois à la une"
             description="Ne manquez pas nos événements à venir"
             className="mb-12"
           />
 
-          <div className="max-w-md mx-auto">
-            <TournamentCard {...featuredTournament} />
+          {/* Grille 3 colonnes */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto max-w-5xl">
+            {featuredTournaments.map((t) => (
+              <TournamentCard key={t.id} {...t} />
+            ))}
           </div>
 
           <div className="mt-12 text-center">
@@ -166,7 +171,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Rejoignez la communauté Pickleball France</h2>
+          <h2 className="text-3xl font-bold mb-6">Rejoignez la communauté Pickleball en France</h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
             Que vous soyez débutant ou joueur expérimenté, rejoignez-nous pour partager votre passion pour le pickleball
           </p>

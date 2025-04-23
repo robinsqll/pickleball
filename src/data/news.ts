@@ -1,7 +1,7 @@
 export const news = [
   {
     id: "n1",
-    title: "Le Pickleball devient officiellement reconnu par les instances sportives françaises",
+    title: "Le pickleball est une pratique intégrante de la FFT, comme le sont le padel, le beach tennis et le paratennis",
     excerpt: "Après des années d'efforts, le pickleball obtient enfin une reconnaissance officielle en France, ouvrant la voie à un développement accéléré de ce sport dans l'Hexagone.",
     date: new Date("2025-02-15"),
     author: {
@@ -9,7 +9,7 @@ export const news = [
       avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=80"
     },
     category: "Actualité",
-    imageSrc: "https://images.pexels.com/photos/8224158/pexels-photo-8224158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    imageSrc: "https://www.liguehautsdefrancetennis.fr/app/uploads/2025/02/20240622_PB_DP_0187-1-768x512.jpg"
   },
   {
     id: "n2",
@@ -21,7 +21,7 @@ export const news = [
       avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=80"
     },
     category: "Compétition",
-    imageSrc: "https://images.pexels.com/photos/7299587/pexels-photo-7299587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    imageSrc: "https://lh3.googleusercontent.com/proxy/QBU2ccel76j5J00kt8b9VFv7NiscyselgCRxgq72JnDqDMOiMlQXzddOeYbuyAsecrVdZw8sYQiLR4MYe-IcdC7ijEKNlZwyJ2aKd79QRNO2tAoU84rntdxAxeBwU_fq9IEvlyzLrHMx6rt5-ms3"
   },
   {
     id: "n3",
@@ -33,7 +33,7 @@ export const news = [
       avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=80"
     },
     category: "Équipement",
-    imageSrc: "https://images.pexels.com/photos/6765028/pexels-photo-6765028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    imageSrc: "https://images.prismic.io/fft-site/ZgGpg8cYqOFdyEXJ_20240217_PB_DP_0086_web.jpeg?auto=format%2Ccompress&rect=0%2C46%2C1000%2C575&w=750&fit=max"
   },
   {
     id: "n4",
@@ -45,7 +45,7 @@ export const news = [
       avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=80"
     },
     category: "Interview",
-    imageSrc: "https://images.pexels.com/photos/8111088/pexels-photo-8111088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    imageSrc: "https://img.20mn.fr/-YcNnrOQTzaWSU5hs2ySaSk/1444x920_le-pickleball-s-apprend-facilement-et-se-joue-principalement-en-double"
   },
   {
     id: "n5",
@@ -57,7 +57,7 @@ export const news = [
       avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=80"
     },
     category: "Entraînement",
-    imageSrc: "https://images.pexels.com/photos/3660613/pexels-photo-3660613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    imageSrc: "https://images.prismic.io/fft-site/ZktaACol0Zci9SWO_illustrationPickleball1-2.jpeg?auto=format,compress"
   },
   {
     id: "n6",
@@ -69,6 +69,6 @@ export const news = [
       avatar: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=80"
     },
     category: "Éducation",
-    imageSrc: "https://images.pexels.com/photos/8612927/pexels-photo-8612927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    imageSrc: "https://www.leparisien.fr/resizer/inUsmuqt7bL1N_-iEWbcosmtozk=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/J2KLUFSE7ZDCPPXDPCPEEO6BE4.jpg"
   }
 ];
