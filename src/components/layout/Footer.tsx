@@ -100,17 +100,16 @@ export default function Footer() {
           <div>
             <h3 className="font-medium text-lg mb-4">Contact</h3>
             <address className="not-italic">
-              <p className="text-sm text-muted-foreground">123 Avenue du Sport</p>
-              <p className="text-sm text-muted-foreground">75001 Paris, France</p>
-              <p className="text-sm text-muted-foreground mt-2">contact@pickleballfrance.fr</p>
-              <p className="text-sm text-muted-foreground">+33 1 23 45 67 89</p>
+              <p className="text-sm text-muted-foreground">92 avenue de la République</p>
+              <p className="text-sm text-muted-foreground">39500 TAVAUX, France</p>
+              <p className="text-sm text-muted-foreground mt-2">tsatgd@gmail.com</p>
             </address>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {year} Pickleball. Tous droits réservés.
+            &copy; {year} TSATGD. Tous droits réservés.
           </p>
         </div>
       </div>

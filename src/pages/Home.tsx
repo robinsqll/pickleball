@@ -86,8 +86,8 @@ export default function Home() {
       <section className="py-16 bg-secondary/50">
         <div className="container mx-auto px-4">
           <SectionHeader
-            title="Objectifs de Pickleball France"
-            description="Notre mission est de développer et promouvoir le pickleball sur tout le territoire français"
+            title="Objectifs"
+            description="Développer et promouvoir le pickleball"
             align="center"
             className="mb-12"
           />
@@ -100,7 +100,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-medium mb-2">Promouvoir</h3>
                 <p className="text-muted-foreground">
-                  Faire connaître le pickleball au grand public et aux instances sportives
+                  Faire connaître le pickleball au grand public
                 </p>
               </CardContent>
             </Card>
@@ -112,7 +112,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-medium mb-2">Rassembler</h3>
                 <p className="text-muted-foreground">
-                  Unir les clubs et les joueurs autour d'une communauté passionnée
+                  Unir les clubs et les joueurs autour d'une communauté
                 </p>
               </CardContent>
             </Card>

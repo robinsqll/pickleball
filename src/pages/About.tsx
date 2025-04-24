@@ -171,7 +171,7 @@ export default function About() {
                   <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
                     <h3 className="font-medium">Adresse</h3>
-                    <p className="text-muted-foreground mt-1">123 Avenue du Sport, 75001 Paris, France</p>
+                    <p className="text-muted-foreground mt-1">92 avenue de la République, 39500 TAVAUX, France</p>
                   </div>
                 </div>
 
@@ -179,17 +179,17 @@ export default function About() {
                   <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-muted-foreground mt-1">contact@pickleballfrance.fr</p>
+                    <p className="text-muted-foreground mt-1">tsatgd@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
                     <h3 className="font-medium">Téléphone</h3>
                     <p className="text-muted-foreground mt-1">+33 1 23 45 67 89</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start">
                   <Clock className="h-5 w-5 text-primary mr-3 mt-0.5" />
