@@ -103,6 +103,7 @@ export default function Footer() {
               <p className="text-sm text-muted-foreground">92 avenue de la République</p>
               <p className="text-sm text-muted-foreground">39500 TAVAUX, France</p>
               <p className="text-sm text-muted-foreground mt-2">tsatgd@gmail.com</p>
+              <p className="text-sm text-muted-foreground">+33 </p>
             </address>
           </div>
         </div>

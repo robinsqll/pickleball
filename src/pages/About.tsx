@@ -183,13 +183,13 @@ export default function About() {
                   </div>
                 </div>
 
-                {/* <div className="flex items-start">
+                <div className="flex items-start">
                   <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
                     <h3 className="font-medium">Téléphone</h3>
-                    <p className="text-muted-foreground mt-1">+33 1 23 45 67 89</p>
+                    <p className="text-muted-foreground mt-1">+33 </p>
                   </div>
-                </div> */}
+                </div>
 
                 <div className="flex items-start">
                   <Clock className="h-5 w-5 text-primary mr-3 mt-0.5" />
