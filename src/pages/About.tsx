@@ -33,19 +33,19 @@ export default function About() {
               />
               <div className="space-y-4 text-lg">
                 <p>
-                  Fondée en 2023, Pickleball France est née de la passion d'un groupe de joueurs déterminés à voir ce sport se développer en France.
+                Lancé en 2023 au sein du club du TSATGD le Pickleball est animé par un groupe de joueurs déterminés à voir ce sport se développer.
                 </p>
                 <p>
-                  Notre objectif est de créer un environnement où les joueurs de tous âges et de tous niveaux peuvent se réunir pour pratiquer, apprendre et partager leur amour du pickleball.
+                L’objectif étant de créer un environnement où les joueurs de tous âges et de tous niveaux peuvent se réunir pour pratiquer, apprendre et partager leur amour du pickleball.
                 </p>
                 <p>
-                  En collaboration avec les instances sportives nationales, nous travaillons à la reconnaissance officielle du pickleball, à l'organisation de compétitions et à la formation de nouveaux joueurs.
+                En collaboration avec les instances sportives, nous travaillons au développement à l’échelle régionale du pickleball, à l'organisation de compétitions et à la formation de nouveaux adeptes.
                 </p>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/5884844/pexels-photo-5884844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                src="https://images.prismic.io/fft-site/ZgGpA8cYqOFdyEWy_20240217_PB_DP_0126_web.jpeg?auto=format%2Ccompress&rect=0%2C113%2C1000%2C525&w=2400&h=1260" 
                 alt="Joueurs de pickleball" 
                 className="w-full h-full object-cover"
               />
