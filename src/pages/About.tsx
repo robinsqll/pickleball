@@ -58,7 +58,7 @@ export default function About() {
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4">
           <SectionHeader
-            title="Pickleball France en chiffres"
+            title="Pickleball en chiffres"
             align="center"
             className="mb-12"
           />
@@ -79,7 +79,7 @@ export default function About() {
                 <div className="mx-auto w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-3xl font-bold mb-2">1500+</h3>
+                <h3 className="text-3xl font-bold mb-2">15 000+</h3>
                 <p className="text-muted-foreground">Joueurs actifs</p>
               </CardContent>
             </Card>
@@ -89,7 +89,7 @@ export default function About() {
                 <div className="mx-auto w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 mb-4">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-3xl font-bold mb-2">30+</h3>
+                <h3 className="text-3xl font-bold mb-2">400+</h3>
                 <p className="text-muted-foreground">Clubs affiliés</p>
               </CardContent>
             </Card>
